@@ -1,0 +1,28 @@
+Explainer: Text Complete
+========================================================
+author: Samuel Chan
+date: 12 November 2017
+autosize: true
+
+At a glance
+========================================================
+title: false
+
+![Screenshot](screenshot1.png)
+The final app is hosted on Shiny and can be accessed here: [Text Complete](https://samuelc.shinyapps.io/textcomplete/)
+
+Considerations
+========================================================
+These are the key considerations for the Text Complete app: 
+- Size: It needs to be fast and computationally light, at least to the extent that it can be feasible in a mobile computing environment.
+- User Experience: Using the app should feel intuitive. User sees a space for text input, and as they type suggestions should appear without hitting an extra submit button or having to read a lengthy manual. 
+
+Stupid Backoff Model
+========================================================
+The app uses a language modeling scheme proposed by Brants et. al. called the Stupid Backoff, which uses the relative frequencies of words coupled with a single backoff factor ("$\alpha$"). This model is "inexpensive to calculate and ... approaches the quality of Kneser-Ney smoothing for large amounts of data", making it particularly suitable for our use-case.
+
+
+Building the App
+========================================================
+The app is built in different phases. First we use the training data to build our ngrams (from unigrams to pentagrams) and store them in their respective tables in a SQL-like environment. This separation of ngrams building and the application dev phase itself allows for us to periodically improve the app with richer training data. It also makes it possible to enhance the app's functionality by allowing persisting storage some time in the future. The development phase itself is relatively straightforward thanks to the Shiny app authoring architecture. 
+

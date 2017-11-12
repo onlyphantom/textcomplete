@@ -1,0 +1,115 @@
+html {
+    background-image: url(bg2.jpg);
+}
+
+body{
+    background: inherit;
+}
+
+ul {
+    font-size: 0.9em;
+}
+
+code {
+    color: darkslategray;
+    background-color: #e6e6e6;
+}
+
+a {
+    color: darkslategray;
+}
+
+span.irs-bar {
+    background: darkslategray;
+    border-top: 1px solid darkslategray;
+    border-bottom: 1px solid darkslategray;
+}
+
+span.irs-bar-edge {
+    border: 1px solid darkslategrey;
+    background: darkslategray;
+}
+
+span.irs-single {
+    background: darkslategray;
+}
+
+.container{
+    vertical-align: middle;
+    margin: 3% auto;
+}
+
+.row {
+    background: rgba(255,255,255,0.8);
+    padding: 2%;
+}
+
+h1{
+    font-size:3.2em;
+    font-weight:bolder;
+    color:darkslategray;
+}
+
+h4 {
+    color: darkslategrey;
+    font-size: 1.6em;
+}
+
+
+p{
+  color:darkslategray;  
+}
+
+.spotlight{
+    padding: 0 auto;
+    text-align: center;
+    margin-top:2%;
+    margin-bottom:10%;
+}
+
+.shiny-input-container {
+    margin: 2% auto 2%;
+}
+
+/*  Styling suggestions tag  */
+#output1 {
+    margin: 1% auto 5%;
+}
+
+#output1 > span {
+    background: darkslategray;
+    color: white;
+    padding: 0.5% 1% 0.5% 1.2%;
+    margin: 1%;
+    font-weight: bolder;
+}
+
+#output1 > span:first-child {
+    background: black;
+    font-weight: 800;
+}
+
+span.help-block {
+    text-align: justify;
+    font-size:0.9em;
+}
+
+
+/*  Styling user text input area  */
+.shiny-input-container{
+    width:600px!important;
+}
+
+#input1 {
+    height: 100px;
+    width: 100%;
+    font-size: 1.8em;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: darkslategray;
+    border-bottom-color: darkslategray;
+    border-bottom-width: 3px;
+}
+
+.form-group.shiny-input-container {
+    width: 80%!important;
+}

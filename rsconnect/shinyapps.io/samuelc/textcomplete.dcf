@@ -1,0 +1,13 @@
+name: textcomplete
+title: textcomplete
+username:
+account: samuelc
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 234569
+bundleId: 1071094
+url: https://samuelc.shinyapps.io/textcomplete/
+when: 1510482115.56939
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: etl.nb.html|etl.Rmd|explainer.md|explainer.Rpres|grams.db|screenshot1.png|thoughtprocess.nb.html|thoughtprocess.Rmd|explainer-figure/unnamed-chunk-1-1.png|explainer-figure/unnamed-chunk-2-1.png|www/bg.jpg|www/dark.css|explainer-cache
